@@ -4,11 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
-    <h1>Ola parcel</h1>
-    <img src="./images/balões.jpg" alt="">
+    <header class="hero">
+        <div class="container">
+        <nav>
+            <ul class="hero__list">
+                <li class="hero__list__item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="hero__list__item">
+                    <a href="#">sobre</a>
+                </li>
+                <li class="hero__list__item">
+                    <a href="#">Bolo </a>
+                </li>
+            </ul>
+        </nav>
+        <img class="hero__logo" src="./images/mamao.png" alt="">
+            <p class="hero__text">O maior aniversário de todos(não perca) chega em <span id="contador"></span> <i class="fa-solid fa-cake-candles"></i></p>
+        <div class="infos-bar">
+            <ul class="infos-bar__list">
+                <li class="infos-bar__list__item">
+                    <b>Preço</b>
+                    A partir de R$ 100,00
+                </li>
+                <li class="infos-bar__list__item">
+                    <b>Localização</b>
+                    Alianz Parque - Barra Funda- São paulo/SP
+                </li>
+                <li class="infos-bar__list__item">
+                    <b>Quando</b>
+                    01/07/2024
+                </li>
+            </ul>
+            <a class="infos-bar__button" href="#">Garanta sua senha</a>
+        </div>
+    </div>
+    </header>
+    <section class="events events--bolo">
+        <div class="container " data-aos="fade-right">
+        <img class="events__images" src="./images/velas.jpg" alt="">
+        <div class="events__details">
+            <h3>Cake</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aliquid quam beatae explicabo dolorem ad architecto provident impedit unde praesentium sed, incidunt sunt velit saepe temporibus dignissimos voluptatum! Nihil, beatae?</p>
+        </div>
+    </div>
+    </section>
+    <section class="events events--baloes">
+        <div class="container " data-aos="fade-left">
+        <img class="events__images" src="./images/balões.jpg" alt="">
+        <div class="events__details">
+            <h3>Balões</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aliquid quam beatae explicabo dolorem ad architecto provident impedit unde praesentium sed, incidunt sunt velit saepe temporibus dignissimos voluptatum! Nihil, beatae?</p>
+        </div>
+    </div>
+    </section>
+    <section class="events events--presente">
+        <div class="container " data-aos="fade-right">
+        <img class="events__images" src="./images/presente.jpg" alt="">
+        <div class="events__details">
+            <h3>Presentes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aliquid quam beatae explicabo dolorem ad architecto provident impedit unde praesentium sed, incidunt sunt velit saepe temporibus dignissimos voluptatum! Nihil, beatae?</p>
+        </div>
+    </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

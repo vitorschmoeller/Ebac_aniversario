@@ -1,3 +1,27 @@
-body {
-    background-color: red;
+@use 'hero';
+@use './components/infos-bar';
+@use 'events';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    } 
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
 }

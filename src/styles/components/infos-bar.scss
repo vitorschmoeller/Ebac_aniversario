@@ -1,0 +1,62 @@
+.infos-bar {
+    background-color: #fff;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid purple;
+    margin-bottom: 80px;
+    
+    @media (max-width:768px) {
+        
+        
+        .infos-bar {
+            display: block;
+            &__list {
+                display: block;
+            }
+        
+            
+        }
+    }
+    
+    &__list{
+        display: flex;
+        gap: 40px;
+    
+
+        
+        &__item{
+            font-size: 14px;
+            color: black;
+            
+
+            b{  
+                margin-bottom: 8px;
+                font-weight: bold;
+                font-size: 16px;
+                display: block;
+                color: purple;
+            }
+        }
+    }
+
+    &__button{
+        font-weight: bold;
+        padding: 12px;
+        background-color: purple;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 640px) {
+            display: none;
+            
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+}
